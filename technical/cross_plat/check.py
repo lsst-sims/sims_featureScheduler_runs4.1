@@ -15,7 +15,13 @@ if __name__ == "__main__":
         print(sur, reward)
         rewards.append(reward)
 
-    sched.update_conditions(conditions)
-    print(sched.request_observation())
-    ack = np.concatenate(sched.queue)
-    print(ack["RA"]) #, ack["dec"], ack["scheduler_note"])
+
+    winner = np.where(rewards == np.nanmax(rewards))[0][0]
+    for bf in sched.survey_lists[4][winner].basis_functions:
+        print(bf, np.nanmax(bf(conditions)))
+
+
+    #sched.update_conditions(conditions)
+    #print(sched.request_observation())
+    #ack = np.concatenate(sched.queue)
+    #print(ack["RA"]) #, ack["dec"], ack["scheduler_note"])
