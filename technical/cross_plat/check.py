@@ -18,4 +18,4 @@ if __name__ == "__main__":
     sched.update_conditions(conditions)
     print(sched.request_observation())
     ack = np.concatenate(sched.queue)
-    print(ack["RA"], ack["dec"], ack["scheduler_note"])
+    print(ack["RA"]) #, ack["dec"], ack["scheduler_note"])
