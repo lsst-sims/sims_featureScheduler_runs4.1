@@ -1,10 +1,8 @@
-run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter u
 run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter g
 run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter r
 run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter i
 run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter z
 run_selfcal_metric --db y1dt_dts0.5_v4.1_10yrs.db --filter y
-run_selfcal_metric --db y1dt_dts5.0_v4.1_10yrs.db --filter u
 run_selfcal_metric --db y1dt_dts5.0_v4.1_10yrs.db --filter g
 run_selfcal_metric --db y1dt_dts5.0_v4.1_10yrs.db --filter r
 run_selfcal_metric --db y1dt_dts5.0_v4.1_10yrs.db --filter i
