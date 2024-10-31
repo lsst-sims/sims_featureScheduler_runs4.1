@@ -40,4 +40,4 @@ export OPENBLAS_NUM_THREADS=1
 # 
 # cat maf.sh | parallel -j 16
 
-cat selfcal.slurm | parallel -j 3
+cat selfcal.sh | parallel -j 3
