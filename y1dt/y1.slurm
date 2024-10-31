@@ -8,7 +8,7 @@
 #SBATCH --error=output-%j.txt
 #
 #SBATCH --nodes=1                       # Number of nodes
-#SBATCH --ntasks=3
+#SBATCH --ntasks=6
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=20g
 #
@@ -40,4 +40,4 @@ export OPENBLAS_NUM_THREADS=1
 # 
 # cat maf.sh | parallel -j 16
 
-cat selfcal.sh | parallel -j 3
+cat selfcal.sh | parallel -j 6
